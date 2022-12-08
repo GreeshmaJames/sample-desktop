@@ -1,0 +1,1 @@
+  <p><img src="images/clock.png"><span id="date">19 January 2016</span><a id="topic-link" href="">Technology</a></p>

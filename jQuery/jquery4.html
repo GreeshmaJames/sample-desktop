@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <title>jQuery</title>
+    <script type="text/javascript" src="jquery.min.js"></script> 
+    <style>
+        html,
+        body{
+            height:100%;
+        }
+        #circle {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: rgba(152, 30, 87, 0.792);
+        }
+       .square {
+            width: 150px;
+            height: 150px;
+            margin: 10px;
+            background-color: rgba(155, 22, 100, 0.489);
+        }
+
+    </style>
+</head>
+<body>
+   <div id="circle"></div>
+    <script type="text/javascript">
+       
+       //method 1
+         $("#circle").click (function() {
+            //  var w=$("body").css("width");
+            //  var h=$("body").css("height");
+            //  document.write("width="+w+"<br>"+"height="+h);
+       //method 2
+            //  document.write("width="+$("body").css("width"));
+            //  document.write("<br>");
+            //  document.write("height="+$("body").css("height"));
+       //method 3
+             var w=$(document).width();
+             var h=$(document).height();
+             document.write("width="+w+"<br>"+"height="+h);
+         });
+
+         
+            
+              
+                
+       
+   
+    </script>
+
+</body>
+</html>

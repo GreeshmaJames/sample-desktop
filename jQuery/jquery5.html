@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <title>jQuery</title>
+    <script type="text/javascript" src="jquery.min.js"></script> 
+    <style>
+        #circle {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: plum;
+        }
+       #square1 {
+            width: 150px;
+            height: 150px;
+            margin: 10px;
+            background-color: skyblue;
+        }
+        #square2 {
+            width: 150px;
+            height: 150px;
+            margin: 10px;
+            background-color: burlywood;
+        }
+    </style>
+</head>
+<body>
+    <div id="circle" color="plum"></div>
+    <div id="square1" color="skyblue"></div>
+    <div id="square2" color="burlywood"></div>
+    
+    <script type="text/javascript">
+    //    $("#circle").click(function() {
+    //     alert("circle was clicked");
+    //    });
+       $("div").click(function() {
+       alert("you have clicked "+ $(this).css("background-color")+''+$(this).attr("id"));
+
+       });  
+    </script>
+
+</body>
+</html>

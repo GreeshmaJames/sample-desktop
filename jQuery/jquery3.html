@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <title>jQuery</title>
+    <script type="text/javascript" src="jquery.min.js"></script> 
+    <style>
+        #circle {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: rgba(152, 30, 87, 0.792);
+        }
+       .square {
+            width: 150px;
+            height: 150px;
+            margin: 10px;
+            background-color: rgba(155, 22, 100, 0.489);
+        }
+
+    </style>
+</head>
+<body>
+   <div id="circle"></div>
+    <script type="text/javascript">
+         var w=200;
+         $("#circle").click (function() {
+          var i=0;          
+         for(i=0; i<=5;i++){
+       
+             setTimeout(function(){
+                $("#circle").css("width",w+"px");
+                w=w+50;
+        },2000*i);
+     }
+});
+       
+   
+    </script>
+
+</body>
+</html>

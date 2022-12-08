@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <title>jQuery</title>
+    <script type="text/javascript" src="jquery.min.js"></script> 
+    <style>
+        #circle {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: rgba(0, 128, 0, 0.532);
+        }
+       .square1 {
+            width: 150px;
+            height: 150px;
+            margin: 10px;
+            background-color: rgba(235, 79, 188, 0.646);
+        }
+        .square2 {
+            width: 150px;
+            height: 150px;
+            margin: 10px;
+            background-color: rgba(79, 141, 235, 0.632);
+        }
+        #hiddenText{
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- <p>fading is finished</p>
+    <button id="fadeOut">fade out text</button>
+    <p id="hiddenText">this text will be hidden</p>
+    <button id="fadeIn">fade in text</button> -->
+    <p id="text">this is some text</p>
+    <button id="toggle">toggle text</button>
+    <!-- <div id="circle"></div>
+    <div class="square1"></div>
+    <div class="square2"></div>  -->
+    <script type="text/javascript">
+         $("#toggle").click(function() {
+            if($("#text").css("display")=="none") {
+                $("#text").fadeIn();
+           }else{
+            $("#text").fadeOut();
+           }
+         });
+        // $("#fadeOut").click(function() {
+        //     $("#text").fadeOut();
+        // });
+        // $("#fadeIn").click(function() {
+        //     $("#hiddenText").fadeIn(3000);
+        // });
+   
+    // $("#circle").click(function() {
+    //      $(this).hide(2000,"swing")
+    //      $(this).show(2000);
+    //      alert("fadeout has finished");
+    //  });
+
+    //  $(".square1").click(function() {
+    //      $(this).hide(2000)
+    //      $(this).show(1000)
+    //  });
+
+    //   $(".square2").click(function() {
+    //       $(this).hide(2000)
+    //      $(this).show(1000)
+    //   });
+   
+    </script>
+
+</body>
+</html>

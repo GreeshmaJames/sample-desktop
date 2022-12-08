@@ -1,0 +1,17 @@
+
+<html>
+<head>
+     <title>Document</title>
+</head>
+<body>
+    <div id="tweetDiv"></div>
+    <script type="text/javascript">
+        var tweetstring="";
+        var tweets=["Hi everyone","I love cornflakes","Night night :)","sweet dreams"];
+        for(var i=0;i<tweets.length;i++){
+        tweetstring=tweetstring+"<p>"+tweets[i]+"</p>";
+    }
+    document.getElementById("tweetDiv").innerHTML=tweetstring;
+    </script>
+</body>
+</html>

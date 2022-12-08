@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <script type="text/javascript" src="jQ/jquery.min.js"></script>
+    <script src="jQ/jquery-ui.js"></script>
+    <link href="jQ/jquery-ui.css" rel="stylesheet"> 
+    
+    <title>Grids & Layouts</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </head>
+  <body class="container">
+    <!-- Basic form from docs-->
+    <!-- See: https://getbootstrap.com/docs/5.2/forms/form-control/#example -->
+    <p class="lead">Basic Form</p>
+    <div>
+      <label for="tEmail" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="tEmail" />
+    </div>
+    <div>
+      <label for="pass" class="form-label">Password</label>
+      <input class="form-control" id="pass" type="password" />
+      <div class="form-text">Password must be at least 8 characters long. </div>
+    </div>
+  
+  
+  
+    <!-- Floating Labels -->
+    <!-- See: https://getbootstrap.com/docs/5.2/forms/floating-labels/#example  -->
+  
+    <p class="lead">Floating Labels</p>
+    <div class="form-floating">
+      <input type="email" class="form-control" id="femail">
+      <label for="femail">Email address</label>
+    </div>
+    <div class="form-floating">
+      <input type="password" class="form-control" id="fpass">
+      <label for="fpass">Password</label>
+    </div> 
+    <div>
+        <button class="btn btn-primary">Submit</button>
+    </div>
+  
+    <!-- Add a submit button to above (ask) -->
+    <!-- <p class="lead">Adding a Submit Button</p>-->
+   
+  
+  
+    <!-- Form inline -->
+    <p class="lead">Inline Forms</p>
+    <div class="row">
+      <div class="col-5">
+        <input type="email" class="form-control" id="tEmail" placeholder="Email address" />
+      </div>
+      <div class="col-5">
+        <input class="form-control" id="pass" type="password" placeholder="Password" />
+      </div>
+      <div class="col-2">
+        <input class="btn btn-primary" type="submit"/>
+      </div>
+    </div>
+  
+    <!-- Labels on the left  -->
+    <p class="lead">Labels on Left</p>
+  
+    <div class="row">
+      <label for=" email3 " class="col-sm-2 col-form-label">Email</label>
+      <div class="col-sm-10 mb-3">
+        <input type="email" class="form-control" id="email3">
+      </div>
+    </div>
+    <div class="">
+      <label for="pass3" class="col-sm-2 col-form-label">Password</label>
+      <div class="col-sm-10 mb-3">
+        <input type="password" class="form-control" id="pass3">
+      </div>
+    </div>
+    <div class="">
+      <label class="">&nbsp;</label>
+      <div class="mb-3">
+        <button type="submit" class="btn btn-primary">Sign in</button>
+      </div>
+    </div>
+  
+  
+  
+  
+    <!-- Input group addons -->
+    <!-- See: https://getbootstrap.com/docs/5.2/forms/input-group/#basic-example -->
+  
+    <p class="lead">Input Groups</p>
+    <div class="row">
+      <div class="col input-group">
+        <span class="input-group-text" id="useraddon">@</span>
+        <input type="text" class="form-control" placeholder="Username" aria-describedby="useraddon">
+      </div>
+      <div class="col">
+        <button class="btn btn-primary">Search</button>
+      </div>
+    </div>
+  
+    <!-- Look at other options in the docs -->
+    <!-- See here: https://getbootstrap.com/docs/5.2/forms/form-control/ -->
+  
+  
+  
+    <!-- Basic table -->
+    <!-- See: https://getbootstrap.com/docs/5.2/content/tables/-->
+    <p class="lead">Basic Table</p>
+  
+    <table class="table table-striped table-warning">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>First</th>
+          <th>Last</th>
+          <th>Handle</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>1</th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+        </tr>
+        <tr>
+          <th>2</th>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>@jacob</td>
+        </tr>
+        <tr>
+          <th>3</th>
+          <td>Larry the Bird</td>
+          <td>...</td>
+          <td>@twitter</td>
+        </tr>
+      </tbody>
+    </table>
+  
+    <!-- Inverse table for dark tables -->
+    <!-- Add class: table-dark -->
+  
+    <!-- Striped table rows -->
+    <!-- Add class: table-striped -->
+  
+    <!-- Hoverable rows -->
+    <!-- Add class: table-hover -->
+  
+    <!-- Can also do combinations of these -->
+  
+    <!-- Add class="table-group-divider" to tbody for a nice divider -->
+  
+    <!-- Active a particular rows -->
+    <!-- Add class: table-active to a tr -->
+  
+    <!-- Try changing color to a nice blue. Hint: just needs a class -->
+    <!-- Add class: table-primary to table -->
+  </body>
+    <script type="text/javascript">
+
+    </script>
+  
+</html>
